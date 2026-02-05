@@ -1,0 +1,100 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: Inter, Arial, sans-serif;
+      fill: #2b2b2b;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .subtitle {
+      font-size: 14px;
+      fill: #555;
+    }
+    .box {
+      fill: #eef3f8;
+      stroke: #4a6fa5;
+      stroke-width: 1.5;
+      rx: 8;
+    }
+    .loop {
+      fill: #f7f2ec;
+      stroke: #9b7d5a;
+      stroke-width: 1.5;
+    }
+    .label {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .arrow {
+      stroke: #555;
+      stroke-width: 1.6;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .divider {
+      stroke: #ddd;
+      stroke-width: 1;
+      stroke-dasharray: 4 4;
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Titles -->
+  <text x="220" y="40" class="title">Traditional ML Pipeline</text>
+  <text x="800" y="40" class="title">Agentic AI System</text>
+
+  <text x="160" y="65" class="subtitle">One-shot prediction</text>
+  <text x="760" y="65" class="subtitle">Decision under uncertainty</text>
+
+  <!-- Divider -->
+  <line x1="600" y1="20" x2="600" y2="500" class="divider"/>
+
+  <!-- ML PIPELINE -->
+  <rect x="160" y="110" width="280" height="50" class="box"/>
+  <text x="200" y="142" class="label">Feature Extraction</text>
+
+  <rect x="160" y="190" width="280" height="50" class="box"/>
+  <text x="255" y="222" class="label">ML Model</text>
+
+  <rect x="160" y="270" width="280" height="50" class="box"/>
+  <text x="235" y="302" class="label">Swipe Decision</text>
+
+  <line x1="300" y1="160" x2="300" y2="190" class="arrow"/>
+  <line x1="300" y1="240" x2="300" y2="270" class="arrow"/>
+
+  <text x="175" y="360" class="subtitle">
+    Fixed pipeline • No memory • No reasoning loop
+  </text>
+
+  <!-- AGENTIC LOOP -->
+  <circle cx="840" cy="160" r="52" class="loop"/>
+  <text x="820" y="165" class="label">State</text>
+
+  <circle cx="960" cy="240" r="52" class="loop"/>
+  <text x="928" y="245" class="label">Planner</text>
+
+  <circle cx="840" cy="330" r="52" class="loop"/>
+  <text x="805" y="335" class="label">Actions</text>
+
+  <circle cx="720" cy="240" r="52" class="loop"/>
+  <text x="690" y="245" class="label">Memory</text>
+
+  <!-- Agent arrows -->
+  <path d="M880 190 Q930 210 945 225" class="arrow"/>
+  <path d="M960 290 Q910 320 860 310" class="arrow"/>
+  <path d="M800 310 Q760 290 750 265" class="arrow"/>
+  <path d="M750 215 Q790 185 830 185" class="arrow"/>
+
+  <!-- Decision note -->
+  <text x="760" y="410" class="subtitle">
+    Loop until uncertainty is reduced → then decide
+  </text>
+
+</svg>
