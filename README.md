@@ -1,7 +1,7 @@
 
 # Swipe Left or Right on Bumble? — ML vs Agentic AI
 
-![Agentic vs ML](docs/banner-dark.png)
+![Agentic vs ML](docs/agentic-vs-ml.svg)
 
 > **Machine Learning predicts attraction.  
 > Agentic AI decides under uncertainty.**
